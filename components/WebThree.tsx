@@ -10,7 +10,7 @@ const WebThree = async ({ key} : any) => {
 *[_type == 'web3'] {
     title,
       skillImage
-  }
+  } [0]
 `
 
     const data = await sanityClient.fetch(query)

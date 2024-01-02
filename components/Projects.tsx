@@ -11,7 +11,7 @@ const Projects = async () => {
         *[_type == 'projects'] {
             title,
               projectImage
-          }
+          } [0]
           `
 
           const data =  await sanityClient.fetch(query);
@@ -21,7 +21,6 @@ const Projects = async () => {
           
     }
     const data = await getData()
-    console.log(data)
   return (
     <div className=' flex flex-col itemsc justify-center lg:px-24 text-center pt-24'>
         <div>
