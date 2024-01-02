@@ -10,7 +10,7 @@ const WebTwo = async ({ key} : any) => {
 *[_type == 'web2'] {
     title,
       skillImage
-  } [0]
+  }[0]
 `
 
     const data = await sanityClient.fetch(query)

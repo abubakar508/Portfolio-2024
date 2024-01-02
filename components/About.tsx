@@ -9,22 +9,6 @@ import 'swiper/css/navigation'
 import { Navigation, Pagination } from "swiper/modules";
 
 const About = () => {
-  const [data, setData] = useState(0);
-  const SwitchElement = [
-    {
-      name: "WEB 2.0",
-      component: <WebTwo key="web2" />, // Store the component directly
-    },
-    {
-      name: "WEB 3.0",
-      component: <WebThree key="web3" />, // Store the component directly
-    },
-  ];
-
-  const handleItemClick = (index: number) => {
-    setData(index >= 0 && index < SwitchElement.length ? index : 0);
-  };
-
   return (
     <div id="about" className="h-screen flex flex-col text-center space-y-4 items-center justify-evenyl lg:px-[200px]">
       <div className="px-3 space-y-3 flex flex-col md:w-[800px]">
